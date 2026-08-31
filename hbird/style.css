@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: sans-serif;
+    cursor: default;
+    overflow-x: hidden;
+    background-image: url(images/sunset-7133867_1280.jpg);
+    background-size: 100vw 100vh;
+    color: white;
+    text-shadow: 5px 5px 5px gray;
+    background-attachment: fixed;
+}
+
+
+::selection {
+    background-color: lightblue;
+    color: white;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    background-color: black;
+}
+
+nav a:hover {
+    background-color: gray;
+}
+
+.download-green {
+    background-color: green;
+}
+
+.download-green:hover {
+    background-color: darkgreen;
+}
+
+
+fieldset {
+    border: 5px outset gray;
+}
