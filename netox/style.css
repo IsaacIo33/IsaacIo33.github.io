@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    text-align: center;
+    cursor: default;
+    font-family: sans-serif;
+    background-image: url(images/tileBackground.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+::selection {
+    background-color: gray;
+}
+
+nav {
+    background-color: rgb(54, 54, 54);
+    box-shadow: 3px 3px 3px lightgray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+nav img {
+    height: 45px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: white;
+    color: black;
+    width: 20%;
+    padding: 5px;
+}
+
+.list img {
+    height: 100%;
+}
+
+ul, ol {
+    text-align: left;
+}
