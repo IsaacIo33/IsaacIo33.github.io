@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoBrowser Addons Store</title>
+    <link rel="stylesheet" href="https://ioposts.farleyengineeredsolutions.com/auto/style.css">
+  <style>
+body {
+  cursor: default;
+}
+
+    .addonsContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .addon {
+      height: 150px;
+      width: 150px;
+      background-color: lightgray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      transition: 0.2s;
+      cursor: pointer;
+      padding: 2px;
+    }
+
+    .addon img {
+      height: 30%;
+      width: 30%;
+    }
+
+.addon:hover {
+  padding: 12px;
+}
+
+  </style>
+</head>
+<body>
+    <nav>
+        <a href="https://ioposts.farleyengineeredsolutions.com/auto/index.html" style="text-decoration: none; margin-top: 0;">
+        <img src="https://ioposts.farleyengineeredsolutions.com/auto/logo.png" alt="AutoBrowser" height="55" draggable="false">
+        </a>
+        <a href="https://ioposts.farleyengineeredsolutions.com/auto/features.html">Features</a>
+        <a href="https://ioposts.farleyengineeredsolutions.com/auto/releases.html">Releases</a>
+        <a href="https://ioposts.farleyengineeredsolutions.com/auto/news.html">News</a>
+        <a href="https://ioposts.farleyengineeredsolutions.com/auto/download.html">Download</a>
+    </nav>
+    <br><br>
+  <h1>AutoBrowser Addons:</h1>
+  <p>Click one of the following to Install it:</p>
+  <div class="addonsContainer">
+    <div class="addon" onclick="window.location.href='test.html?downloadUrl=https://isaacio.farleyengineeredsolutions.org/browser/calc.html'">
+      <img src="https://cdn.pixabay.com/photo/2020/03/10/17/09/calculator-4919597_1280.png" alt="Image">
+      <h3>Prism Calculator</h3>
+      <p>Calculator</p>
+    </div>
+    <div class="addon" onclick="window.location.href='test.html?downloadUrl=https://flg.farleyengineeredsolutions.org/'">
+      <img src="https://flg.farleyengineeredsolutions.org/icon.png" alt="Image">
+      <h3>FLG</h3>
+      <p>Generator</p>
+    </div>
+    <div class="addon" onclick="window.location.href='test.html?downloadUrl=https://joseph2.farleyengineeredsolutions.org/tinyciv/'">
+      <img src="https://joseph2.farleyengineeredsolutions.org/tinyciv/images/chest.png" alt="Image">
+      <h3>TinyCiv</h3>
+      <p>Game</p>
+    </div>
+    <div class="addon" onclick="window.location.href='test.html?downloadUrl=https://www.wikipedia.org/'">
+      <img src="https://www.wikipedia.org/static/apple-touch/wikipedia.png" alt="Image">
+      <h3>Wikipedia</h3>
+      <p>Website</p>
+    </div>
+    <div class="addon" onclick="window.location.href='test.html?downloadUrl=https://pinetools.com/'">
+      <img src="https://pinetools.com/files/favicon.ico" alt="Image">
+      <h3>Pine Tools</h3>
+      <p>Tools</p>
+    </div>
+  </div>
+
+
+  <br>
+
+  <div class="addonsContainer">
+    <div class="addon" onclick="window.location.href='test.html?downloadUrl=https://en.wiktionary.org/wiki/Wiktionary:Main_Page'">
+      <img src="https://en.wiktionary.org/static/images/icons/enwiktionary.svg" alt="Image">
+      <h3>Wiktionary</h3>
+      <p>Website</p>
+    </div>
+  </div>
+
+<p>(AutoBrowser required to use Addons)</p>
+
+  <script>
+    if (window.location.href.split("?downloadUrl=")[1]){
+      document.addonUrl = window.location.href.split("?downloadUrl=")[1];
+    }
+  </script>
+</body>
+</html>
